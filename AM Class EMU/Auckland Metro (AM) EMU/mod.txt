@@ -1,0 +1,127 @@
+[ModMeta]
+schema=1
+name=NZ Auckland AM Class EMU
+author=EscWasTaken
+desc=Auckland AM Class EMU Used For Passenger Operations For Auckland Transport
+version=1.0.0
+
+
+[TrainUnit]
+schema=2
+id=AM_EMU_AMA
+name_loc=NZ_AM_AMA_NAME
+name_en=AMA End Car
+category=Auckland Metro Cars
+description=Driving Cab And Passenger Compartment.
+tags=control,metro,commuter,regional,narrow,electric,mu,push-pull
+year_introduced=2014
+max_speed=110
+max_acceleration=1
+max_regular_braking=1
+power=760
+length=24.3
+width=2.67
+empty_mass=44000
+max_pax=124
+pax_doors_per_side=2
+price=1000000
+cost_per_km=0.2
+cost_per_km_per_pax=0.1
+cost_per_day=150
+allow_player_composition=true
+tex_base=Art/AMA/AMA-Base.png
+tex_top=Art/AMA/AMA-Roof.png
+tex_decors=Art/AMA/AMA-Decal.png
+tex_m_width=30
+tex_m_height=3.75
+recolor_base=false
+recolor_decor=true
+front_coupler=scharfenberg
+back_coupler=AM_MU_COUPLE
+
+
+[TrainUnit]
+schema = 2
+id=AM_EMU_AMP
+name_loc=NZ_AM_AMP_NAME
+name_en=AMP End Car
+category=Auckland Metro Cars
+description=Driving Cab, Pantograph, And Passenger Compartment.
+tags=control,metro,commuter,regional,narrow,electric,mu,push-pull,pantograph
+year_introduced=2014
+max_speed=110
+max_acceleration=1
+max_regular_braking=1
+power=760
+length=24.3
+width=2.67
+empty_mass=44000
+max_pax=124
+pax_doors_per_side=2
+price=1000000
+cost_per_km=0.2
+cost_per_km_per_pax=0.1
+cost_per_day=150
+allow_player_composition=true
+tex_base=Art/AMP/AMP-Base.png
+tex_top=Art/AMP/AMP-Roof.png
+tex_decors=Art/AMP/AMP-Decal.png
+tex_m_width=30
+tex_m_height=3.75
+recolor_base=false
+recolor_decor=true
+front_coupler=scharfenberg
+back_coupler=AM_MU_COUPLE
+
+
+[TrainUnit]
+schema=2
+id=AM_EMU_AMT
+name_loc=NZ_AM_AMT_NAME
+name_en=AMT Trailer Car
+description=Only A Passenger Compartment.
+category=Auckland Metro Cars
+tags=metro,commuter,regional,narrow,electric,mu
+year_introduced=2014
+max_speed=110
+max_acceleration=1
+max_regular_braking=1
+power=380
+length=23.2
+width=2.67
+empty_mass=44000
+max_pax=125
+pax_doors_per_side=2
+price=1000000
+cost_per_km=0.2
+cost_per_km_per_pax=0.1
+cost_per_day=150
+allow_player_composition=true
+tex_base=Art/AMT/AMT-Base.png
+tex_top=Art/AMT/AMT-Roof.png
+tex_decors=Art/AMT/AMT-Decal.png
+tex_m_width=30
+tex_m_height=3.75
+recolor_base=false
+recolor_decor=false
+front_coupler=AM_MU_COUPLE
+back_coupler=AM_MU_COUPLE
+
+
+[TrainMultipleUnit]
+schema=2
+id=AM_EMU
+name_loc=NZ_AM_EMU_NAME
+name_en=Auckland AM Class EMU
+description_loc=NZ_AM_EMU_DESC
+description_en=The Rolling Stock Used for Public Transport Throughout Auckland, New Zealand. <br> Photo By Takeshi Aida, CC BY-SA 2.0, via Wikimedia Commons.
+tags=control,metro,commuter,regional,narrow,electric,mu,push-pull,pantograph
+year_introduced=2014
+countries_operated=NZ
+countries_built=ES
+; Photo By Takeshi Aida, CC BY-SA 2.0, via Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Auckland_AT_Metro_AM_Class,_Parnell,_Auckland_(20240202a).jpg
+photo=Auckland_AT_Metro_AM_Class.jpg
+default_code=AM-###
+default_name=AM ###
+composition=AM_EMU_3_Car,AM 3 Car EMU,AM_EMU_AMA,AM_EMU_AMT,AM_EMU_AMP flip
+composition=AM_EMU_3+3_Car,AM 3+3 Car EMU,AM_EMU_AMA,AM_EMU_AMT,AM_EMU_AMP flip,EMU,AM_EMU_AMA,AM_EMU_AMT,AM_EMU_AMP flip
